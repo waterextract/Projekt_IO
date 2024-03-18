@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/lavender_border"
+        android:layout_marginTop="58dp">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/lavender">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical = "true" />
+
+    <TextView
+        android:id="@+id/ToolBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/profile_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_mode_edit_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+         />
+
+</RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ProfilePic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_circle_svgrepo_com"
+        app:shapeAppearanceOverlay="@style/styleRoundedCornerImage"
+        />
+
+    <TextView
+        android:id="@+id/ProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Your Name"
+        android:textColor="@color/lavender"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/ProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfileName"
+        android:layout_centerHorizontal="true"
+        android:text="xyz@example.com"
+        android:textColor="@color/lavender"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+
+
